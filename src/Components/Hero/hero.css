@@ -1,0 +1,56 @@
+.hero-section {
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    margin: 2px auto;
+    text-align: center;
+  }
+  .hero-section p,
+  .hero-section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .hero-section p {
+    color: black;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .hero-section h1 {
+    color: teal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 10px;
+  }
+  .hero-section div {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hero-section div button {
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px
+  }
+  .hero-section button:nth-child(1) {
+    background-color: teal;
+    color: white;
+    border-color: teal;
+  }
+  .hero-section button:nth-child(2) {
+    background-color: white;
+    color: teal;
+    border-color: teal;
+  }

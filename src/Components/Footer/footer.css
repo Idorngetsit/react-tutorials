@@ -1,0 +1,81 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 90%; */
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .footer h2 {
+    font-size: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mail-number {
+    width: 40%;
+    height: 70px;
+    display: flex;
+    margin-top: 15px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+  .mail {
+    background-color: #fff1f2;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+  .number {
+    background-color: #f0f9ff;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+  .mail-number a {
+    color: black;
+    font-size: 1.1rem;
+    padding: 20px;
+    text-decoration: none;
+    gap: 10px;
+  }
+  
+  form {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 50px;
+  }
+  
+  input {
+    height: 4rem;
+    background-color: #f0fdfa;
+    outline-color: #ccc;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    padding: 0 3rem;
+  }
+  
+  textarea {
+    resize: none;
+    background-color: #f0fdfa;
+    border: 2px solid #cccccc;
+    padding: 2rem 3rem;
+  }
+  
+  form > button {
+    width: 30%;
+    margin: 0 auto;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: #0f172a;
+    font-weight: 700;
+  }
+  
