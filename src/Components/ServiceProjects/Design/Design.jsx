@@ -1,11 +1,11 @@
-import '../servicedetails.css';
-import ProCards from "../Project cards/ProCards";
+import '../serviceprojects.css'
+import Projects from '../Projects/Project';
 
 
 const Design = () => {
   return (
     <>
-      <h1>Web Design</h1>
+      <h1>UI/UX Design</h1>
       <div className="Topic">
         <img src="../../../../src/assets/reactpic.png" />
       </div>
@@ -25,10 +25,13 @@ const Design = () => {
         reprehenderit explicabo repellat dolor quod recusandae voluptate.
         Aperiam, excepturi?
       </p>
+
+      <h1>Projects</h1>
+
       <div className="projects">
-        <ProCards num={1} />
-        <ProCards num={2} />
-        <ProCards num={3} />
+        <Projects num={1} />
+        <Projects num={2} />
+        <Projects num={3} />
       </div>
     </>
   );

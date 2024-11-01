@@ -1,8 +1,9 @@
-import '../servicedetails.css';
-import ProCards from "../Project cards/ProCards";
+import '../serviceprojects.css'
+import Projects from '../Projects/Project';
 
 
 const WebDev = () => {
+
     return (
        <>
          <h1>Web Development</h1>
@@ -24,10 +25,13 @@ const WebDev = () => {
            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis maxime eum reprehenderit
            explicabo repellat dolor quod recusandae voluptate. Aperiam, excepturi?
          </p>
+
+         <h1>Projects</h1>
+
          <div className="projects">
-           <ProCards num={ 1 } />
-           <ProCards num={ 2 } />
-           <ProCards num={ 3 } />
+           <Projects num={ 1 } />
+           <Projects num={ 2 } />
+           <Projects num={ 3 } />
          </div>
        </>
      );

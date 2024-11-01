@@ -6,8 +6,10 @@ const Projects = ({num}) => {
   return (
 
       <div className="project">
+        
+        {/* <h1>Projects</h1> */}
 
-        <p>Project {num}</p>
+        <img src="../../../../src/assets/reactpic.png" alt="" />
 
       </div>
 
