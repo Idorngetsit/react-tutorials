@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import './App.css';
+import Context from "./Context/Context";
 import RootLayout from "./layout/RootLayout";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
@@ -17,7 +18,7 @@ function App() {
 
   const routes = createRoutesFromElements (
 
-    <Route path="/" element={ <RootLayout/> } >
+    <Route path="/" element= { <RootLayout/> } >
 
       <Route index element= { <Home/> } />
 
@@ -31,6 +32,8 @@ function App() {
 
       </Route>
 
+      <Route/>
+
     </Route>
   );
 
@@ -38,9 +41,13 @@ function App() {
 
   return (
 
-    <RouterProvider router={router}>
+    <Context>
+
+      <RouterProvider router={router}>
       
-    </RouterProvider>
+      </RouterProvider>
+
+    </Context>
     
   )
 }

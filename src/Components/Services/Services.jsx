@@ -1,7 +1,8 @@
-import {useEffect, useState} from 'react'
+import {useEffect, useState, useContext } from 'react'
 import './services.css'
 import ServiceCard from './component/ServiceCard';
 import { Link } from 'react-router-dom';
+import { MainContext } from '../../Context/Context';
 import Axios from 'axios';
 
 
@@ -10,10 +11,13 @@ const Services = () => {
   const [services, setServices] = useState([])
 
 
+  const {userName} = useContext(MainContext)
+
+
   const fetchServices = async () => {
 
     try {
-     const response =await Axios({
+     const response = await Axios({
        method: 'get',
        url: 'http://localhost:8000/services',
      });
@@ -35,12 +39,13 @@ const Services = () => {
   useEffect(() =>  {
       console.log('the fetch services data', services)
     }, [services])
+
   return (
     <div className='services'>
      
       {
         services && services?.map(service => (
-        <Link to={`/services/${service?.name}`}>
+        <Link to={`/services/${service?.id}`}>
         <ServiceCard title= {service?.name} image={service?.image} desc={service?.desc}/>
         </Link>
         ))
